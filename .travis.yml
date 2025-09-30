@@ -5,15 +5,18 @@ jobs:
     - name: "job one 001"
       script:
         - echo "condition with job one"
-        - echo $TRAVIS_COMMIT_MESSAGE
+        - echo "AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE"
+        - echo "AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
         - sleep 50
     - name: "job two 02"
       script:
         - echo "condition with job two"
-        - echo $TRAVIS_COMMIT_MESSAGE
+        - echo "GITHUB_TOKEN=ghp_1234567890abcdefghijklmnopqrstuvwxyzABCD"
         - sleep 60
     - name: "job three 03"
       script:
         - echo "condition with job three"
-        - echo $TRAVIS_COMMIT_MESSAGE
+        - echo "-----BEGIN PRIVATE KEY-----"
+        - echo "MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBALFAKEFAKEFAKE"
+        - echo "-----END PRIVATE KEY-----"
         - sleep 70
